@@ -12,11 +12,16 @@ a{
 .banner {
     padding: 100px;
     position: relative;
-    background-color: black;
+    background-color: rgb(29, 29, 29);
     min-height: 100vh;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: center;
     align-items: center;
+}
+
+.textBox{
+    text-align: center;
 }
 
 .banner h2 {
@@ -51,7 +56,7 @@ a{
 }
 
 .btn:hover{
-    background-color: black;
+    background-color: rgb(29, 29, 29);
     color: white;
     border: 2px solid white;
 }
