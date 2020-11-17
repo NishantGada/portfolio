@@ -66,19 +66,18 @@ header{
     z-index: 1;
     top: 0;
     left: 0;
-    transition: 0.5s;
+    transition: 0.4s;
 }
 
 header.sticky {
     background-color: white;
-    padding: 40px 100px;
+    padding: 30px 100px;
 }
 
 header.sticky ul li a {
     color: black;
     display: inline-block;
     margin: 0 20px;
-    /* font-weight: bold; */
     font-size: 1em;
 }
 
