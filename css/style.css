@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 a{
@@ -15,7 +16,6 @@ a{
     background-color: rgb(29, 29, 29);
     min-height: 100vh;
     display: flex;
-    /* justify-content: space-between; */
     justify-content: center;
     align-items: center;
 }
@@ -25,14 +25,14 @@ a{
 }
 
 .banner h2 {
-    font-size: 2em;
+    font-size: 18px;
     color: white;
     font-weight: 500;
-    line-height: 1.5em;
+    line-height: 2em;
 }
 
 .banner h2 span {
-    font-size: 1em;
+    font-size: 42px;
     font-weight: 700;
     letter-spacing: 1.5px;
 }
@@ -74,24 +74,6 @@ header{
     transition: 0.4s;
 }
 
-header.sticky {
-    background-color: white;
-    padding: 30px 100px;
-}
-
-header.sticky ul li a {
-    color: black;
-    display: inline-block;
-    margin: 0 20px;
-    font-size: 1em;
-}
-
-header.sticky .logo {
-    color: black;
-    display: inline-block;
-    font-size: large;
-}
-
 .logo {
     color: white;
     font-size: large;
@@ -115,6 +97,22 @@ header li a {
     margin: 0 20px;
 }
 
+.back-to-top a {
+    visibility: hidden;
+    right: 30px;
+    bottom: 50px;
+    width: 50px;
+    text-align: center;
+    position: fixed;
+    background: transparent;
+    border: 2px solid #0984e3;
+    color: #0984e3;
+}
+
+.active a {
+    visibility: visible;
+}
+
 .content {
     display: flex;
     justify-content: space-between;
@@ -129,7 +127,7 @@ header li a {
 }
 
 .about h2{
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -151,7 +149,7 @@ header li a {
 }
 
 .skills h2{
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: center;
     margin: 40px 0 20px 0;
 }
@@ -159,7 +157,7 @@ header li a {
 .skill h2 {
     font-size: 1.2em;
     text-align: center;
-    margin: 20px 0 20px 0;
+    margin: 0px 0 20px 0;
 }
 
 .skills .content{
@@ -189,7 +187,7 @@ header li a {
 
 .work .heading h2{
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .work .heading p{
@@ -218,6 +216,10 @@ header li a {
     /* padding: 100px 60px; */
 }
 
+.contact h1 {
+    font-size: 2em;
+}
+
 .contact label, .contact h1, .contact p {
     color: white;
 }
@@ -230,6 +232,13 @@ header li a {
 
     .banner h2 {
         font-size: 1.5em;
+    }
+
+    .back-to-top a {
+        /* background-color: white; */
+        background-color: #0984e3;
+        border: 2px solid #0984e3;
+        color: white;
     }
 
     .about .content {
@@ -245,6 +254,7 @@ header li a {
     
     .about{
         padding: 20px;
+        text-align: justify;
     }
     
     .about .self_image img{
@@ -285,19 +295,31 @@ header li a {
         font-size: 1.5em;
     }
 
+    .back-to-top-active a {
+        /* background-color: white; */
+        background-color: #0984e3;
+        border: 2px solid #0984e3;
+        color: white;
+    }
+
     .about .content {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
+
+    .contentBox {
+        padding: 0 10px;
+    }
     
     .contentBox p {
-        width: 90%;
+        width: 100%;
     }
     
     .about{
         padding: 20px;
+        text-align: justify;
     }
     
     .about .self_image img{

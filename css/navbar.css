@@ -1,4 +1,4 @@
-nav{
+nav, #nav{
     background-color: rgb(32, 32, 32);
     /* background-color: rgb(255, 86, 35); */
         width: 100%;
@@ -19,6 +19,8 @@ nav{
     nav ul li a {
         text-decoration: none;
         color: white;
+
+        transition: 0.5s;
     }
     
     .toggle{
@@ -26,14 +28,22 @@ nav{
         padding: 20px 0;
         text-align: right;
         display: none;
-    /* background-color: rgb(56, 56, 56); */
-    /* background-color: rgb(216, 50, 0); */
-    background-color: rgb(32, 32, 32);
+        /* background-color: rgb(56, 56, 56); */
+        /* background-color: rgb(216, 50, 0); */
+        background-color: rgb(32, 32, 32);
     }
     
     .toggle i {
         margin-right: 20px;
         font-size: 24px;
+    }
+
+    .toggle h2 {
+        color: white;
+        font-size: 26px;
+        font-weight: bold;
+        float: left;
+        margin-left: 30px;
     }
     
     .menu{
@@ -44,6 +54,14 @@ nav{
         .toggle {
             display: block;
         }
+
+        .toggle h2 {
+            color: white;
+            font-size: 26px;
+            font-weight: bold;
+            float: left;
+            margin-left: 30px;
+        }
     
         nav ul {
             display: none;
@@ -52,6 +70,7 @@ nav{
         nav ul li {
             display: block;
             text-align: left;
+            padding: 20px 20px 20px 0px;
         }
     
         .active {
