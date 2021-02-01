@@ -40,10 +40,13 @@ a{
 .banner h3 {
     font-size: 1.2em;
     color: white;
+    margin-bottom: 20px;
     font-weight: 500;
 }
 
 .btn {
+    margin: 10px;
+    width: 70%;
     background-color: white;
     color: black;
     font-weight: bold;
