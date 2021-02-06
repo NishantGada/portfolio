@@ -216,21 +216,6 @@ header li a {
     /* max-height: 300px; */
 }
 
-.contact {
-    background-color: rgb(29, 29, 29);
-    color: white;
-    padding: 50px 0;
-    /* padding: 100px 60px; */
-}
-
-.contact h1 {
-    font-size: 2em;
-}
-
-.contact label, .contact h1, .contact p {
-    color: white;
-}
-
 @media screen and (max-width: 360px) {
 
     .banner {

@@ -9,10 +9,9 @@
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
-<style>
-    
-</style>
+
 <body>
 
     <nav id="nav">
@@ -101,12 +100,13 @@
     <section class="work" id="work">
         <div class="heading">
             <h2> <strong> My work </strong> </h2>
-            <p>These are some of the other projects that I have made.  </p>
+            <p>These are some of the other projects that I have made. </p>
         </div>
 
         <div class="content">
             <div class="workBox">
-                <a href="https://nishantgada.github.io/Ecommerce/" target="_blank"><img src="./img/ecommerce.jpg" alt=""></a>
+                <a href="https://nishantgada.github.io/Ecommerce/" target="_blank"><img src="./img/ecommerce.jpg"
+                        alt=""></a>
             </div>
             <div class="workBox">
                 <a href="https://nishantgada.github.io/UnWritten/" target="_blank"><img src="./img/Blog.png" alt=""></a>
@@ -120,7 +120,7 @@
         </div>
     </section>
 
-    <section class="contact" id="contact">
+    <!-- <section class="contact" id="contact">
         <section class="text-gray-700 body-font relative">
             <div class="container px-5 mx-auto">
                 <div class="flex flex-col text-center w-full mb-12">
@@ -155,17 +155,10 @@
                                 class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Send</button>
                         </div>
                         <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                            <!-- <a class="text-indigo-500">nishant.gada160@gmail.com</a> -->
                             <p class="leading-normal my-5">Mumbai
                                 <br>Maharashtra, India. 
                             </p>
                             <span class="inline-flex">
-                                <!-- <a class="text-gray-500" href="#">
-                                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                                    </svg>
-                                </a> -->
                                 <a class="ml-4 text-gray-500" href="#">
                                     <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                         stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
@@ -195,16 +188,43 @@
                 </div>
             </div>
         </section>
+    </section> -->
+
+    <section class="contact" id="contact">
+        <div>
+            <h1>Contact me</h1>
+            <p>Feel free to reach out to me. </p>
+        </div>
+
+        <form action="" method="post" name="contact-form" onsubmit="return ValidateForm()">
+            <input type="text" name="name" id="name" placeholder="name" autocomplete="off">
+            <input type="text" name="email" id="email" placeholder="email" autocomplete="off">
+            <input type="text" name="message" id="message" placeholder="message" autocomplete="off">
+            <div>
+                <button type="submit" id="submit">Send</button>
+            </div>
+        </form>
+
+        <div id="sub-contact">
+            <p>Mumbai,</p>
+            <p>India.</p>
+            <p>
+                <span><a href="https://www.instagram.com/nishantgada_/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></a></i></span>
+                <span><a href="https://www.linkedin.com/in/nishantgada1199/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></a></i></span>
+                <span><a href="https://github.com/NishantGada/" target="_blank"><i class="fa fa-github" aria-hidden="true"></a></i></span>
+            </p>
+        </div>
     </section>
 
     <div class="back-to-top">
         <a href="#nav"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script>
-        $(document).ready(function() {
-            $('.menu').click(function() {
+        $(document).ready(function () {
+            $('.menu').click(function () {
                 $('ul').toggleClass('active');
             })
         })
@@ -215,6 +235,20 @@
             var btt_btn = document.querySelector('.back-to-top');
             btt_btn.classList.toggle('active', window.scrollY > 0);
         });
+
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
+
+
+        /* **** PREVENTING EMPTY VALUE SUBMISSION AT INPUT FIELD: - ****** */
+        function validateForm() {
+            var x = document.forms["contact-form"]["name"]["email"]["message"].value;
+            if (x == "") {
+                alert("Empty values can't be submitted");
+                return false;
+            }
+        }
     </script>
 </body>
 </html>
