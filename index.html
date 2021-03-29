@@ -7,11 +7,12 @@
     <title>Nishant Gada</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/contact.css">
 </head>
-
 <body>
 
     <nav id="nav">
@@ -23,6 +24,7 @@
         <ul>
             <li> <a href="#about"> About </a> </li>
             <li> <a href="#skills"> Skills </a> </li>
+            <li> <a href="#experience"> Experience </a> </li>
             <li> <a href="#work"> Work </a> </li>
             <li> <a href="#contact"> Contact </a> </li>
         </ul>
@@ -72,28 +74,62 @@
         <div class="content">
             <div class="skill">
                 <h2>Front End</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, ex?</p>
+                <p>Skills such HTML, CSS, JavaScript and Bootstrap</p>
             </div>
             <div class="skill">
                 <h2>Back end</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, ex?</p>
+                <p>Technologies like Django, PHP and SQL</p>
             </div>
             <div class="skill">
                 <h2>Mobile App Developement</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, ex?</p>
+                <p>Flutter</p>
             </div>
             <div class="skill">
                 <h2>Python</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, ex?</p>
+                <p>Intermediate level, Data science</p>
             </div>
             <div class="skill">
-                <h2>OOP</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, ex?</p>
+                <h2>UI UX</h2>
+                <p>Web designing and App designing</p>
             </div>
             <div class="skill">
                 <h2>Leadership</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, ex?</p>
+                <p>Communication, management and belief. </p>
             </div>
+        </div>
+    </section>
+
+    <section class="experience" id="experience">
+        <h2>Experience</h2>
+        <div>
+            <p id="position">Full Stack Development Intern</p>
+            <p id="duration">Nirol, April 2020 to May 2020</p>
+            <p id="description">
+                <li>Worked with and led a team of 5 other interns and attempted at developing
+                    a video sharing platform similar to TikTok.
+                </li>
+                <li> Managed the tasks of the front end team along with working at the back
+                    end.
+                </li>
+                <li>Worked with technologies like - Django, SQL, JavaScript, HTMl, CSS and
+                    Bootstrap.
+                </li>
+            </p>
+        </div>
+        <div>
+            <p id="position">Python Programming and Research Intern</p>
+            <p id="duration">KJSCE, July 2019 to October 2019</p>
+            <p id="description">
+                <li>Programmed a Python code to fetch tweets from Twitter
+                    regarding the revocation of Article 370 by the Government of India.
+                </li>
+                <li> Pre-processed the collected data to perform sentiment
+                    analysis and visualize it using various Python libraries.                    
+                </li>
+                <li>Published a paper under IEEE journal regarding the same
+                    based on the conclusions drawn and analysis done.                    
+                </li>
+            </p>
         </div>
     </section>
 
@@ -196,10 +232,10 @@
             <p>Feel free to reach out to me. </p>
         </div>
 
-        <form action="" method="post" name="contact-form" onsubmit="return ValidateForm()">
-            <input type="text" name="name" id="name" placeholder="name" autocomplete="off">
-            <input type="text" name="email" id="email" placeholder="email" autocomplete="off">
-            <input type="text" name="message" id="message" placeholder="message" autocomplete="off">
+        <form action="" method="post" name="contact-form">
+            <input type="text" name="name" id="name" placeholder="name" required autocomplete="off">
+            <input type="text" name="email" id="email" placeholder="email" required autocomplete="off">
+            <input type="text" name="message" id="message" placeholder="message" required autocomplete="off">
             <div>
                 <button type="submit" id="submit">Send</button>
             </div>
@@ -233,21 +269,11 @@
     <script>
         window.addEventListener('scroll', function () {
             var btt_btn = document.querySelector('.back-to-top');
-            btt_btn.classList.toggle('active', window.scrollY > 0);
+            btt_btn.classList.toggle('active', window.scrollY > 300);
         });
 
         if (window.history.replaceState) {
             window.history.replaceState(null, null, window.location.href);
-        }
-
-
-        /* **** PREVENTING EMPTY VALUE SUBMISSION AT INPUT FIELD: - ****** */
-        function validateForm() {
-            var x = document.forms["contact-form"]["name"]["email"]["message"].value;
-            if (x == "") {
-                alert("Empty values can't be submitted");
-                return false;
-            }
         }
     </script>
 </body>

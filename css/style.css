@@ -2,13 +2,43 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Josefin Sans', sans-serif;
     scroll-behavior: smooth;
 }
 
 a{
     text-decoration: none;
 }
+
+.back-to-top a {
+    visibility: hidden;
+    right: 30px;
+    bottom: 50px;
+    width: 50px;
+    text-align: center;
+    position: fixed;
+    /* background: transparent; */
+    border: 2px solid #f53b57;
+    /* border: 2px solid #0984e3; */
+    /* color: #0984e3; */
+
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #f53b57;
+    /* background-color: #0984e3; */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.active a {
+    visibility: visible;
+}
+
+
+/* ================================ Banner Section ======================================= */
 
 .banner {
     padding: 100px;
@@ -64,57 +94,9 @@ a{
     border: 2px solid white;
 }
 
-header{
-    width: 100%;
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 100px;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    transition: 0.4s;
-}
 
-.logo {
-    color: white;
-    font-size: large;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1.5px;
-}
 
-header ul {
-    display: flex;
-}
-
-header li {
-    list-style: none;
-    font-size: 1.2em;
-}
-
-header li a {
-    color: white;
-    display: inline-block;
-    margin: 0 20px;
-}
-
-.back-to-top a {
-    visibility: hidden;
-    right: 30px;
-    bottom: 50px;
-    width: 50px;
-    text-align: center;
-    position: fixed;
-    background: transparent;
-    border: 2px solid #0984e3;
-    color: #0984e3;
-}
-
-.active a {
-    visibility: visible;
-}
+/* ================================ About Section ======================================= */
 
 .content {
     display: flex;
@@ -146,6 +128,10 @@ header li a {
     border: 2px solid black;
 }
 
+
+
+/* ================================ Skills Section ======================================= */
+
 .skills {
     background-color: rgb(29, 29, 29);
     color: white;
@@ -161,7 +147,6 @@ header li a {
 .skill h2 {
     font-size: 1.2em;
     font-weight: 600;
-    /* font-style: oblique; */
     font-style: italic;
     text-align: center;
     margin: 0px 0 20px 0;
@@ -178,15 +163,63 @@ header li a {
     background-color: rgb(51, 51, 51);
     padding: 40px 20px;
     color: white;
-    max-width: 340px;
+    /* max-width: 340px; */
+    width: 340px;
     margin: 10px;
     text-align: center;
     transition: 0.25s;
 }
 
 .skills .content .skill:hover{
-    background-color: rgb(0, 153, 255);
+    /* background-color: rgb(0, 153, 255); */
+    /* background-color: #00cec9; */
+    background-color: #f53b57;
 }
+
+
+
+
+/* ================================ Experience Section ======================================= */
+
+.experience {
+    /* border: 1px solid black; */
+    padding: 100px;
+    max-height: 100%;
+}
+
+.experience h2 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.experience div {
+    /* border: 1px solid black; */
+    margin: 50px auto 0px auto;
+    width: 70%;
+    max-height: 100%;
+}
+
+.experience div #position {
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.experience div #duration {
+    font-size: 18px;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+.experience div #description li{
+    font-size: 14px;
+    margin: 10px 0;
+    list-style:decimal;
+}
+
+
+/* ================================ Work Section ======================================= */
 
 .work{
     padding: 100px;
@@ -218,6 +251,15 @@ header li a {
 
 @media screen and (max-width: 360px) {
 
+    .back-to-top a {
+        right: 20px;
+        bottom: 20px;
+    }
+
+
+
+    /* ================================ Banner Section ======================================= */
+
     .banner {
         padding: 50px;
     }
@@ -226,12 +268,9 @@ header li a {
         font-size: 1.5em;
     }
 
-    .back-to-top a {
-        /* background-color: white; */
-        background-color: #0984e3;
-        border: 2px solid #0984e3;
-        color: white;
-    }
+
+
+    /* ================================ About Section ======================================= */
 
     .about .content {
         display: flex;
@@ -252,6 +291,23 @@ header li a {
     .about .self_image img{
        margin-top: 20px;
     }
+    
+
+
+    /* ================================ Skills Section ======================================= */
+
+    .skills {
+        padding: 50px 60px 100px 60px;
+        margin-top: 50px;
+    }
+
+    .skills h2{
+        margin: 0px 0 20px 0;
+    }
+
+
+
+    /* ================================ Work Section ======================================= */
 
     .work{
         padding: 20px;
@@ -267,17 +323,18 @@ header li a {
         max-width: 100%;
     }
 
-    .skills {
-        padding: 50px 60px 100px 60px;
-        margin-top: 50px;
-    }
-
-    .skills h2{
-        margin: 0px 0 20px 0;
-    }
 }
 
 @media screen and (max-width: 768px) {
+
+    .back-to-top a {
+        right: 20px;
+        bottom: 20px;
+    }
+
+
+
+    /* ================================ Banner Section ======================================= */
 
     .banner {
         padding: 50px;
@@ -287,12 +344,9 @@ header li a {
         font-size: 1.5em;
     }
 
-    .back-to-top-active a {
-        /* background-color: white; */
-        background-color: #0984e3;
-        border: 2px solid #0984e3;
-        color: white;
-    }
+
+    
+    /* ================================ About Section ======================================= */
 
     .about .content {
         display: flex;
@@ -317,6 +371,48 @@ header li a {
     .about .self_image img{
        margin-top: 30px;
     }
+    
+
+
+    /* ================================ Skills Section ======================================= */
+
+    .skills {
+        padding: 50px 60px 100px 60px;
+        margin-top: 50px;
+    }
+
+    .skills h2{
+        margin: 0px 0 20px 0;
+    }
+
+
+
+    /* ================================ Experience Section ======================================= */
+
+    .experience {
+        padding: 20px;
+    }
+
+    .experience div {
+        width: 80%;
+        text-align: justify;
+    }
+
+    .experience div #position {
+        margin: 15px 0;
+    }
+
+    .experience div #duration {
+        margin: 15px 0;
+    }
+
+    .experience div #description li{
+        margin: 15px 0;
+    }
+
+
+
+    /* ================================ Work Section ======================================= */
 
     .work{
         padding: 20px;
@@ -332,12 +428,4 @@ header li a {
         max-width: 100%;
     }
 
-    .skills {
-        padding: 50px 60px 100px 60px;
-        margin-top: 50px;
-    }
-
-    .skills h2{
-        margin: 0px 0 20px 0;
-    }
 }
