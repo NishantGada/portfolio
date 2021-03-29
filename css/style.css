@@ -429,3 +429,10 @@ a{
     }
 
 }
+
+@media screen and (max-width: 640px) {
+    .workBox{
+        width: 90%;
+        padding: 20px;
+    }
+}
