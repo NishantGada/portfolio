@@ -1,0 +1,66 @@
+.work {
+    padding: 100px;
+}
+
+.work .heading h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.work .heading p {
+    text-align: center;
+    font-size: 1em;
+}
+
+.work .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.workBox {
+    width: 40%;
+    padding: 20px;
+}
+.workBox img {
+    max-width: 100%;
+    /* max-height: 300px; */
+}
+
+@media screen and (max-width: 360px) {
+    .work {
+        padding: 20px;
+        margin-top: 30px;
+    }
+    
+    .workBox{
+        width: 90%;
+        padding: 20px;
+    }
+
+    .workBox img {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .work {
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    .workBox {
+        width: 45%;
+        padding: 20px;
+    }
+
+    .workBox img {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .workBox {
+        width: 90%;
+        padding: 20px;
+    }
+}

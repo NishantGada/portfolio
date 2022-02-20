@@ -1,0 +1,74 @@
+.banner {
+    padding: 100px;
+    position: relative;
+    background-color: rgb(29, 29, 29);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textBox {
+    text-align: center;
+}
+
+.banner h2 {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    line-height: 2em;
+}
+
+.banner h2 span {
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.banner h3 {
+    font-size: 1.2em;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.btn {
+    margin: 10px;
+    width: 70%;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 30px;
+    letter-spacing: 1.5px;
+    border: 2px solid white;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: rgb(29, 29, 29);
+    color: white;
+    border: 2px solid white;
+}
+
+@media screen and (max-width: 360px) {
+    .banner {
+        padding: 50px;
+    }
+
+    .banner h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        padding: 50px;
+    }
+
+    .banner h2 {
+        font-size: 1.5em;
+    }
+}
+
