@@ -1,0 +1,83 @@
+.education {
+    h2 {
+        margin: 40px 0 20px 0;
+    }
+
+    .timeline {
+        position: relative;
+        margin: 20px auto;
+        padding: 20px;
+        width: 90%;
+        max-width: 800px;
+    }
+
+    .timeline::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        width: 4px;
+        background-color: #f53b57;
+        top: 0;
+        bottom: 0;
+        margin-left: -2px;
+    }
+
+    .timeline-item {
+        padding: 20px;
+        position: relative;
+        width: 50%;
+        margin-bottom: 50px;
+    }
+
+    .timeline-item.left {
+        left: 0;
+    }
+
+    .timeline-item.right {
+        left: 50%;
+    }
+
+    .timeline-item::before {
+        content: '';
+        position: absolute;
+        top: 25px;
+        right: -6px;
+        width: 12px;
+        height: 12px;
+        background-color: white;
+        border: 4px solid #f53b57;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    .timeline-item.right::before {
+        left: -6px;
+    }
+
+    .timeline-content {
+        background-color: white;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        position: relative;
+        text-align: left;
+    }
+
+    .timeline-date {
+        font-size: 18px;
+        color: #f53b57;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .timeline-content h2 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .timeline-content p {
+        font-size: 16px;
+        color: #555;
+    }
+}
