@@ -1,11 +1,13 @@
 .content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .contentBox p {
     width: 90%;
     text-align: justify;
+    margin: 20px 0;
 }
 
 .about {
@@ -26,6 +28,7 @@
 .about .self_image img {
     max-width: 300px;
     max-height: 300px;
+    border-radius: 20px;
     /* border: 2px solid black; */
 }
 

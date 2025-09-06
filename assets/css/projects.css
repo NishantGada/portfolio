@@ -75,3 +75,66 @@ h2 {
 button:hover {
     background-color: #f53b57;
 }
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        /* Stack projects in 1 column on tablets */
+        gap: 40px;
+    }
+
+    .projects {
+        padding: 40px 30px 80px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.6em;
+    }
+
+    .project {
+        padding: 15px;
+    }
+
+    .project h2 {
+        font-size: 20px;
+    }
+
+    .project p,
+    .project span {
+        font-size: 14px;
+    }
+
+    .project button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects {
+        padding: 30px 20px 60px 20px;
+    }
+
+    .grid-container {
+        gap: 20px;
+    }
+
+    .project {
+        padding: 12px;
+    }
+
+    .project h2 {
+        font-size: 18px;
+        flex-direction: column;
+        /* Icon above title if present */
+        row-gap: 5px;
+    }
+
+    .project button {
+        width: 100%;
+        /* Full-width buttons on mobile */
+    }
+}

@@ -1,71 +1,87 @@
 .experience {
-    /* border: 1px solid black; */
-    padding: 100px;
-    max-height: 100%;
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+    color: black;
 }
 
 .experience h2 {
     text-align: center;
     font-size: 2em;
     font-weight: 600;
+    margin-bottom: 30px;
 }
 
-.experience div {
-    /* border: 1px solid black; */
-    margin: 50px auto 0px auto;
-    width: 70%;
-    max-height: 100%;
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
+.accordion-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
 }
 
-.experience div #position {
-    font-size: 20px;
-    font-weight: 600;
-    color: #f53b57;
-}
-
-.experience div #duration {
+.accordion-header {
+    width: 100%;
+    background: #f7f7f7;
+    border: none;
+    outline: none;
+    text-align: left;
+    padding: 15px 20px;
     font-size: 18px;
-    font-style: italic;
-    /* border: 1px solid black; */
-
+    font-weight: 600;
+    cursor: pointer;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
-.experience div #duration span {
+.accordion-header:focus {
+    outline: none;
+}
+
+.accordion-header:hover {
+    background: #ececec;
+}
+
+.duration {
     font-size: 14px;
+    font-style: italic;
+    font-weight: normal;
+    color: #555;
 }
 
-.experience div #description ul li {
-    font-size: 14px;
-    list-style: decimal;
+.accordion-body {
+    display: none;
+    padding: 15px 20px;
+    background: white;
 }
 
-li {
-    color: gray;
-    text-align: justify;
+.accordion-body ul {
+    margin: 0;
+    padding-left: 20px;
 }
 
-.experience div #certificate {
-    color: #d60726;
-    font-weight: bold;
+.accordion-body li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #444;
+    list-style: circle;
+}
+
+.accordion-item.active .accordion-body {
+    display: block;
 }
 
 @media screen and (max-width: 768px) {
-    .experience {
-        padding: 20px;
+    .accordion-header {
+        font-size: 14px;
     }
 
-    .experience div {
-        width: 90%;
+    .accordion-body li {
+        font-size: 12px;
+        text-align: justify;
     }
 
-    .experience div #duration {
-        flex-direction: column;
-        align-items: flex-start;
+    .duration {
+        text-align: right;
     }
 }
