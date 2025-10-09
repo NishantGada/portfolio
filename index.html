@@ -2,341 +2,362 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nishant Gada</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/banner.css">
-    <link rel="stylesheet" href="assets/css/about.css">
-    <link rel="stylesheet" href="assets/css/skills.css">
-    <link rel="stylesheet" href="assets/css/education.css">
-    <link rel="stylesheet" href="assets/css/projects.css">
-    <link rel="stylesheet" href="assets/css/experience.css">
-    <link rel="stylesheet" href="assets/css/work.css">
-    <link rel="stylesheet" href="assets/css/publication.css">
-    <link rel="stylesheet" href="assets/css/navbar.css">
-    <link rel="stylesheet" href="assets/css/contact.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nishant Gada</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/banner.css">
+  <link rel="stylesheet" href="assets/css/about.css">
+  <link rel="stylesheet" href="assets/css/skills.css">
+  <link rel="stylesheet" href="assets/css/education.css">
+  <link rel="stylesheet" href="assets/css/projects.css">
+  <link rel="stylesheet" href="assets/css/experience.css">
+  <link rel="stylesheet" href="assets/css/work.css">
+  <link rel="stylesheet" href="assets/css/publication.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
 </head>
 
 <body>
 
-    <nav id="nav">
-        <div class="toggle">
-            <!-- <h2>Portfolio</h2> -->
-            <div class="menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
+  <nav id="nav">
+    <div class="toggle">
+      <!-- <h2>Portfolio</h2> -->
+      <div class="menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
+    </div>
+
+    <ul>
+      <li> <a href="#about"> About </a> </li>
+      <li> <a href="#skills"> Skills </a> </li>
+      <li> <a href="#experience"> Experience </a> </li>
+      <li> <a href="#projects"> Projects </a> </li>
+      <li> <a href="#education"> Education </a> </li>
+      <li> <a href="#contact"> Contact </a> </li>
+    </ul>
+  </nav>
+
+  <section class="banner" id="banner">
+    <div class="textBox">
+      <p id="constantly-updating">const update;</p>
+      <p>My name is <br> <span> Nishant Gada. </span> </p>
+      <h3>Visionary, Developer</h3>
+      <a href="#about" class="btn">about me</a>
+      <a href="https://nishant-gada-resume.s3.us-east-1.amazonaws.com/resume.pdf" target="_blank" class="btn">resume</a>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>
+      About me
+    </h2>
+
+    <div class="content">
+      <div class="contentBox">
+        <p>
+          I am currently a Computer Software Engineering student at Northeastern University, Boston, MA. I
+          have around 2.5 years of experience building financial systems, full-stack applications, production
+          grade
+          backend infrastructure,
+          and writing clean, reusable, modular, and effecient code.
+        </p>
+        <p>
+          With a keen interest in Cloud Computing, Software Development, and
+          Artificial Intelligence, I am eager to augment my knowledge and skills in the professional world.
+        </p>
+        <!-- <br><br> -->
+        <p>
+          I have successfully led and delivered projects for my company and its clients, earning appreciation
+          and recognition. My strong technical and communication skills enable me to confidently share my
+          ideas, thrive as a team player, and effectively take on leadership roles when needed.
+        </p>
+      </div>
+
+      <div class="self_image">
+        <img src="./assets/img/self-no-bg.jpeg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2><strong>Skills</strong></h2>
+
+    <div class="content">
+      <div class="skill">
+        <h2>Front End</h2>
+        <p>React, TypeScript, JavaScript, Angular, HTML, Next JS</p>
+        <p>CSS, SCSS, Bootstrap, Tailwind CSS, Ant Design, Material UI, Figma</p>
+      </div>
+      <div class="skill">
+        <h2>Back end</h2>
+        <p>Python (Django, Flask), Fast API</p>
+        <p>JavaSE, JavaEE, Spring, Spring Boot, Hibernate</p>
+        <p>Next JS, Node, Express, Nest JS</p>
+      </div>
+      <div class="skill">
+        <h2>Mobile App Developement</h2>
+        <p>React-Native, Flutter, Swift</p>
+      </div>
+      <div class="skill">
+        <h2>Cloud</h2>
+        <p>Amazon Web Services, Google Cloud Platform, Heroku, Netlify, Vercel</p>
+      </div>
+      <div class="skill">
+        <h2>Database</h2>
+        <p>SQL -> MySQL, PostgreSQL, MariaDB</p>
+        <p>NoSQL -> MongoDB, Firebase, Redis</p>
+        <p>GraphQL</p>
+      </div>
+      <div class="skill">
+        <h2>Leadership</h2>
+        <p>Communication, Vision, Management and Belief. </p>
+      </div>
+      <div class="skill">
+        <h2>DevOps & CI/CD</h2>
+        <p>Docker, Kubernetes, Jenkins, Github Actions, Terraform</p>
+      </div>
+      <div class="skill">
+        <h2>Languages</h2>
+        <p>C, C#, C++, Go</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="experience" id="experience">
+    <h2>Experience</h2>
+
+    <div class="accordion">
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <div>
+            <p>Software Engineering Co-op</p>
+            <p class="experience-company-name">Hometap</p>
+          </div>
+          <span class="duration">January 2025 to June 2025</span>
+        </button>
+        <div class="accordion-body">
+          <ul>
+            <li>
+              Pioneered the foundational architecture and recursive optimization of LMS migration to a third-party
+              service using Python, Django REST Framework, React, and TypeScript, boosting code stability, workflows,
+              analytics by 29% and bumping interstate service delivery by 15%
+            </li>
+            <li>
+              Partnered with 5+ cross-functional teams to successfully deliver staged LMS migration updates across 3
+              major releases with the help of several CI/CD pipelines, consistently meeting sprint goals. Wrote
+              production-grade code with less than 2% post-deployment issues
+            </li>
+            <li>
+              Conducted 100+ code reviews, championing clean code principles, effective design pattern usage, and
+              large-scale adoption of TypeScript for static typing and Pydantic for runtime data validation thereby
+              enhancing code reliability, readability, and long-term maintainability across teams
+            </li>
+            <li>
+              Increased test coverage by 13% (to 86%) which in-turn improved deployment reliability and
+              stable production releases, by writing comprehensive unit, integration, and end-to-end tests using
+              Cypress, Jest, Unittest, and Pytest
+            </li>
+          </ul>
         </div>
+      </div>
 
-        <ul>
-            <li> <a href="#about"> About </a> </li>
-            <li> <a href="#skills"> Skills </a> </li>
-            <li> <a href="#experience"> Experience </a> </li>
-            <li> <a href="#projects"> Projects </a> </li>
-            <li> <a href="#education"> Education </a> </li>
-            <li> <a href="#contact"> Contact </a> </li>
-        </ul>
-    </nav>
-
-    <section class="banner" id="banner">
-        <div class="textBox">
-            <p id="constantly-updating">const update;</p>
-            <p>My name is <br> <span> Nishant Gada. </span> </p>
-            <h3>Visionary, Developer</h3>
-            <a href="#about" class="btn">about me</a>
-            <a href="https://nishant-gada-resume.s3.us-east-1.amazonaws.com/resume.pdf" target="_blank"
-                class="btn">resume</a>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <div>
+            <p>Software Developer</p>
+            <p class="experience-company-name">Think360.ai (Think Analytics)</p>
+          </div>
+          <span class="duration">September 2021 to June 2023</span>
+        </button>
+        <div class="accordion-body">
+          <ul>
+            <li>
+              Managed and optimized backend infrastructure for a secure, high-traffic KYC module using
+              Python and AWS services like Lambda, S3, DynamoDB, API Gateway, CodeCommit, and CloudWatch,
+              enhancing system efficiency and reliability
+            </li>
+            <li>Boosted client positive funnel by over 36% through Python-based code optimization and
+              test-driven development</li>
+            <li>
+              Spearheaded the creation of a React, Python, and AWS-powered dashboard for company-wide
+              internal audits, conducting product demos, and meetings with senior executives; enhancing
+              service response time by more than 22%
+            </li>
+            <li>
+              Rapidly delivered a full-stack "Loan Disbursal System" within 4 sprints, developing a
+              responsive front-end in React, a robust backend with Python and SQL, optimizing caching
+              using Redis and leveraging AWS for cloud solutions within the agile framework
+            </li>
+          </ul>
         </div>
-    </section>
+      </div>
 
-    <section class="about" id="about">
-        <h2>
-            About me
-        </h2>
-
-        <div class="content">
-            <div class="contentBox">
-                <p>
-                    I am currently a Computer Software Engineering student at Northeastern University, Boston, MA. I
-                    have around 2.5 years of experience building financial systems, full-stack applications, production
-                    grade
-                    backend infrastructure,
-                    and writing clean, reusable, modular, and effecient code.
-                </p>
-                <p>
-                    With a keen interest in Cloud Computing, Software Development, and
-                    Artificial Intelligence, I am eager to augment my knowledge and skills in the professional world.
-                </p>
-                <!-- <br><br> -->
-                <p>
-                    I have successfully led and delivered projects for my company and its clients, earning appreciation
-                    and recognition. My strong technical and communication skills enable me to confidently share my
-                    ideas, thrive as a team player, and effectively take on leadership roles when needed.
-                </p>
-            </div>
-
-            <div class="self_image">
-                <img src="./assets/img/self-no-bg.jpeg" alt="">
-            </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <div>
+            <p>Associate Software Engineer</p>
+            <p class="experience-company-name">Accenture</p>
+          </div>
+          <span class="duration">June 2021 to September 2023</span>
+        </button>
+        <div class="accordion-body">
+          <ul>
+            <li>
+              Engineered a React-Native, Python, Django, and AWS-based app for over 15,000 users to input
+              health data, facilitating analysis and insights for better fitness goal comprehension
+            </li>
+            <li>
+              Reduced SQL query response time by over 82% through strategic indexing and optimization
+              techniques, significantly improving data retrieval speed and user experience
+            </li>
+          </ul>
         </div>
-    </section>
+      </div>
 
-    <section class="skills" id="skills">
-        <h2><strong>Skills</strong></h2>
-
-        <div class="content">
-            <div class="skill">
-                <h2>Front End</h2>
-                <p>React, TypeScript, JavaScript, Angular, HTML, Next JS</p>
-                <p>CSS, SCSS, Bootstrap, Tailwind CSS, Ant Design, Material UI, Figma</p>
-            </div>
-            <div class="skill">
-                <h2>Back end</h2>
-                <p>Python (Django, Flask), Fast API</p>
-                <p>JavaSE, JavaEE, Spring, Spring Boot, Hibernate</p>
-                <p>Next JS, Node, Express, Nest JS</p>
-            </div>
-            <div class="skill">
-                <h2>Mobile App Developement</h2>
-                <p>React-Native, Flutter, Swift</p>
-            </div>
-            <div class="skill">
-                <h2>Cloud</h2>
-                <p>Amazon Web Services, Google Cloud Platform, Heroku, Netlify, Vercel</p>
-            </div>
-            <div class="skill">
-                <h2>Database</h2>
-                <p>SQL -> MySQL, PostgreSQL, MariaDB</p>
-                <p>NoSQL -> MongoDB, Firebase, Redis</p>
-                <p>GraphQL</p>
-            </div>
-            <div class="skill">
-                <h2>Leadership</h2>
-                <p>Communication, Vision, Management and Belief. </p>
-            </div>
-            <div class="skill">
-                <h2>DevOps & CI/CD</h2>
-                <p>Docker, Kubernetes, Jenkins, Github Actions, Terraform</p>
-            </div>
-            <div class="skill">
-                <h2>Languages</h2>
-                <p>C, C#, C++, Go</p>
-            </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <div>
+            <p>Full Stack Development Intern</p>
+            <p class="experience-company-name">Nirol</p>
+          </div>
+          <span class="duration">April 2020 to May 2020</span>
+        </button>
+        <div class="accordion-body">
+          <ul>
+            <li>
+              Led a team of 5 interns to develop a TikTok/YouTube-like video-sharing platform for a
+              startup using Python, Django, SQL, and JavaScript, resulting in a 18% increase in user
+              engagement
+            </li>
+            <li>
+              Established the backend infrastructure to enable core features like posting, following,
+              liking, and commenting, which improved platform interactivity by 37%
+            </li>
+            <li>
+              Organised brainstorming sessions for task completion, adhering to deadlines, and maintaining
+              weekly code submissions and code reviews
+            </li>
+          </ul>
         </div>
-    </section>
+      </div>
 
-    <section class="experience" id="experience">
-        <h2>Experience</h2>
-
-        <div class="accordion">
-            <div class="accordion-item">
-                <button class="accordion-header">
-                    Software Engineering Co-op – Hometap
-                    <span class="duration">January 2025 to June 2025</span>
-                </button>
-                <div class="accordion-body">
-                    <ul>
-                        <li>
-                            Pioneered the foundational architecture and recursive optimization of LMS migration to a third-party service using Python, Django REST Framework, React, and TypeScript, boosting code stability, workflows, analytics by 29% and bumping interstate service delivery by 15%
-                        </li>
-                        <li>
-                            Partnered with 5+ cross-functional teams to successfully deliver staged LMS migration updates across 3 major releases with the help of several CI/CD pipelines, consistently meeting sprint goals. Wrote production-grade code with less than 2% post-deployment issues
-                        </li>
-                        <li>
-                            Conducted 100+ code reviews, championing clean code principles, effective design pattern usage, and large-scale adoption of TypeScript for static typing and Pydantic for runtime data validation thereby enhancing code reliability, readability, and long-term maintainability across teams
-                        </li>
-                        <li>
-                            Increased test coverage by 13% (to 86%) which in-turn improved deployment reliability and
-                            stable production releases, by writing comprehensive unit, integration, and end-to-end tests using Cypress, Jest, Unittest, and Pytest
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <button class="accordion-header">
-                    Software Developer – Think360.ai (Think Analytics)
-                    <span class="duration">September 2021 to June 2023</span>
-                </button>
-                <div class="accordion-body">
-                    <ul>
-                        <li>
-                            Managed and optimized backend infrastructure for a secure, high-traffic KYC module using
-                            Python and AWS services like Lambda, S3, DynamoDB, API Gateway, CodeCommit, and CloudWatch,
-                            enhancing system efficiency and reliability
-                        </li>
-                        <li>Boosted client positive funnel by over 36% through Python-based code optimization and
-                            test-driven development</li>
-                        <li>
-                            Spearheaded the creation of a React, Python, and AWS-powered dashboard for company-wide
-                            internal audits, conducting product demos, and meetings with senior executives; enhancing
-                            service response time by more than 22%
-                        </li>
-                        <li>
-                            Rapidly delivered a full-stack "Loan Disbursal System" within 4 sprints, developing a
-                            responsive front-end in React, a robust backend with Python and SQL, optimizing caching
-                            using Redis and leveraging AWS for cloud solutions within the agile framework
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <button class="accordion-header">
-                    Associate Software Engineer - Accenture
-                    <span class="duration">June 2021 to September 2023</span>
-                </button>
-                <div class="accordion-body">
-                    <ul>
-                        <li>
-                            Engineered a React-Native, Python, Django, and AWS-based app for over 15,000 users to input
-                            health data, facilitating analysis and insights for better fitness goal comprehension
-                        </li>
-                        <li>
-                            Reduced SQL query response time by over 82% through strategic indexing and optimization
-                            techniques, significantly improving data retrieval speed and user experience
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <button class="accordion-header">
-                    Full Stack Development Intern - Nirol
-                    <span class="duration">April 2020 to May 2020</span>
-                </button>
-                <div class="accordion-body">
-                    <ul>
-                        <li>
-                            Led a team of 5 interns to develop a TikTok/YouTube-like video-sharing platform for a
-                            startup using Python, Django, SQL, and JavaScript, resulting in a 18% increase in user
-                            engagement
-                        </li>
-                        <li>
-                            Established the backend infrastructure to enable core features like posting, following,
-                            liking, and commenting, which improved platform interactivity by 37%
-                        </li>
-                        <li>
-                            Organised brainstorming sessions for task completion, adhering to deadlines, and maintaining
-                            weekly code submissions and code reviews
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <button class="accordion-header">
-                    Python Programming and Research Intern - University of Mumbai
-                    <span class="duration">July 2019 to October 2019</span>
-                </button>
-                <div class="accordion-body">
-                    <ul>
-                        <li>
-                            Developed a robust Python pipeline to fetch and analyze thousands of tweets using the
-                            Twitter API, focusing on public reactions to the revocation of Article 370
-                        </li>
-                        <li>
-                            Performed advanced sentiment analysis using Python and NLP techniques, extracting meaningful
-                            insights from unstructured social media data.
-                        </li>
-                        <li>
-                            Created compelling visualizations with Matplotlib, highlighting trends and patterns in
-                            public opinion with clarity and precision
-                        </li>
-                        <li>
-                            Identified prominent thought leaders and influencers, providing a detailed assessment of
-                            citizens’ positive and negative attitudes toward the government’s action
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <div>
+            <p>Python Programming and Research Intern</p>
+            <p class="experience-company-name">University of Mumbai</p>
+          </div>
+          <span class="duration">July 2019 to October 2019</span>
+        </button>
+        <div class="accordion-body">
+          <ul>
+            <li>
+              Developed a robust Python pipeline to fetch and analyze thousands of tweets using the
+              Twitter API, focusing on public reactions to the revocation of Article 370
+            </li>
+            <li>
+              Performed advanced sentiment analysis using Python and NLP techniques, extracting meaningful
+              insights from unstructured social media data.
+            </li>
+            <li>
+              Created compelling visualizations with Matplotlib, highlighting trends and patterns in
+              public opinion with clarity and precision
+            </li>
+            <li>
+              Identified prominent thought leaders and influencers, providing a detailed assessment of
+              citizens’ positive and negative attitudes toward the government’s action
+            </li>
+          </ul>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section class="projects" id="projects">
-        <h2>Projects</h2>
-        <div class="grid-container">
-            <div class="project" id="project1">
-                <h2>ComfortZone <span>{ wip }</span></h2>
-                <p><i>Tech Stack: Python, Flask, MySQL</i></p>
-                <p>
-                    A project that I think would be relevant to many. This is a toilet aggregator/ searching app that
-                    would
-                    allow the user to - find a nearby toilet, rate it on the application, add its pictures, and further
-                    inforamtion.
-                    This would allow for better accessibility to toilets, comfort, and hygiene for everyone.
-                </p>
-                <!-- <button onclick="viewDetails(1)">View on Github</button> -->
-                <a class="github-links" href="https://github.com/NishantGada/comfort-zone-flask-backend"
-                    target="_blank">View on Github</a>
-            </div>
-            <div class="project" id="project2">
-                <h2>Jiraffe</h2>
-                <p><i>Tech Stack: Java, Spring Boot, Hibernate, SQL</i></p>
-                <p>
-                    Developed a bug tracking application with a user-friendly JSP interface, implementing role-based
-                    authorization to streamline bug reporting, assignment, and tracking while reducing unauthorized
-                    actions. Leveraged Hibernate ORM and DAO patterns for efficient data management and real-time
-                    updates, and designed an advanced dashboard with filtering and sorting capabilities.
-                </p>
-                <!-- <button onclick="viewDetails(2)">View on Github</button> -->
-                <a class="github-links" href="https://github.com/NishantGada/bug-tracker" target="_blank">View on
-                    Github</a>
-            </div>
-            <div class="project" id="project3">
-                <h2>BostonTown</h2>
-                <p><i>Tech Stack: React, Node, Express, MongoDB</i></p>
-                <p>
-                    Led a team of 4 to develop a Boston-based listing website using the MERN stack, featuring over
-                    300,000 properties for improved apartment search and connecting users and agents conveniently.
-                    Designed a user reporting feature with an interactive heat map, for increased trust and informed
-                    decision-making.
-                </p>
-                <!-- <button onclick="viewDetails(3)">View on Github</button> -->
-                <a class="github-links" href="https://github.com/NishantGada/BostonTown" target="_blank">View on
-                    Github</a>
-            </div>
-            <div class="project" id="project4">
-                <h2>UnWritten</h2>
-                <p><i>Tech Stack: Python, Django, JavaScript, CSS, Tailwind, SQL</i></p>
-                <p>
-                    Developed a full-stack blogging platform with a robust backend supporting blog creation, media
-                    uploads, and timestamp tracking. Designed advanced search and filtering features with improving
-                    navigation and content discovery.
-                </p>
-                <!-- <button onclick="viewDetails(4)">View on Github</button> -->
-                <a class="github-links" href="https://github.com/NishantGada/unwritten" target="_blank">View on
-                    Github</a>
-            </div>
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="grid-container">
+      <div class="project" id="project1">
+        <h2>ComfortZone <span>{ wip }</span></h2>
+        <p><i>Tech Stack: Python, Flask, MySQL</i></p>
+        <p>
+          A project that I think would be relevant to many. This is a toilet aggregator/ searching app that
+          would
+          allow the user to - find a nearby toilet, rate it on the application, add its pictures, and further
+          inforamtion.
+          This would allow for better accessibility to toilets, comfort, and hygiene for everyone.
+        </p>
+        <!-- <button onclick="viewDetails(1)">View on Github</button> -->
+        <a class="github-links" href="https://github.com/NishantGada/comfort-zone-flask-backend" target="_blank">View on
+          Github</a>
+      </div>
+      <div class="project" id="project2">
+        <h2>Jiraffe</h2>
+        <p><i>Tech Stack: Java, Spring Boot, Hibernate, SQL</i></p>
+        <p>
+          Developed a bug tracking application with a user-friendly JSP interface, implementing role-based
+          authorization to streamline bug reporting, assignment, and tracking while reducing unauthorized
+          actions. Leveraged Hibernate ORM and DAO patterns for efficient data management and real-time
+          updates, and designed an advanced dashboard with filtering and sorting capabilities.
+        </p>
+        <!-- <button onclick="viewDetails(2)">View on Github</button> -->
+        <a class="github-links" href="https://github.com/NishantGada/bug-tracker" target="_blank">View on
+          Github</a>
+      </div>
+      <div class="project" id="project3">
+        <h2>BostonTown</h2>
+        <p><i>Tech Stack: React, Node, Express, MongoDB</i></p>
+        <p>
+          Led a team of 4 to develop a Boston-based listing website using the MERN stack, featuring over
+          300,000 properties for improved apartment search and connecting users and agents conveniently.
+          Designed a user reporting feature with an interactive heat map, for increased trust and informed
+          decision-making.
+        </p>
+        <!-- <button onclick="viewDetails(3)">View on Github</button> -->
+        <a class="github-links" href="https://github.com/NishantGada/BostonTown" target="_blank">View on
+          Github</a>
+      </div>
+      <div class="project" id="project4">
+        <h2>UnWritten</h2>
+        <p><i>Tech Stack: Python, Django, JavaScript, CSS, Tailwind, SQL</i></p>
+        <p>
+          Developed a full-stack blogging platform with a robust backend supporting blog creation, media
+          uploads, and timestamp tracking. Designed advanced search and filtering features with improving
+          navigation and content discovery.
+        </p>
+        <!-- <button onclick="viewDetails(4)">View on Github</button> -->
+        <a class="github-links" href="https://github.com/NishantGada/unwritten" target="_blank">View on
+          Github</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="education" id="education">
+    <h2>Education</h2>
+    <div class="timeline">
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <h2>Master's of Science in Computer Software Engineering</h2>
+          <p>Northeastern University</p>
+          <p>Boston, MA, USA</p>
+          <span class="timeline-date">September 2023 - December 2025</span>
         </div>
-    </section>
-
-    <section class="education" id="education">
-        <h2>Education</h2>
-        <div class="timeline">
-            <div class="timeline-item left">
-                <div class="timeline-content">
-                    <h2>Master's of Science in Computer Software Engineering</h2>
-                    <p>Northeastern University</p>
-                    <p>Boston, MA, USA</p>
-                    <span class="timeline-date">September 2023 - December 2025</span>
-                </div>
-            </div>
-            <div class="timeline-item right">
-                <div class="timeline-content">
-                    <h2>Bachelor of Technology in Electronics & Telecommunication Engineering</h2>
-                    <p>University of Mumbai</p>
-                    <p>Mumbai, India</p>
-                    <span class="timeline-date">June 2017 - June 2021</span>
-                </div>
-            </div>
+      </div>
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <h2>Bachelor of Technology in Electronics & Telecommunication Engineering</h2>
+          <p>University of Mumbai</p>
+          <p>Mumbai, India</p>
+          <span class="timeline-date">June 2017 - June 2021</span>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
 
-    <!-- <section class="publication">
+  <!-- <section class="publication">
         <div class="publication-container">
             <h2><strong>Publication</strong></h2>
             <p>
@@ -346,62 +367,62 @@
     </section>  -->
 
 
-    <section class="contact" id="contact">
-        <div>
-            <h1>Contact</h1>
-        </div>
-
-        <div id="reach_me_email">
-            <p><a href="">gada.ni@northeastern.edu</a></p>
-        </div>
-
-        <div id="sub-contact">
-            <p>
-                <span><a href="https://www.instagram.com/nishantgada_/" target="_blank"><i class="fa fa-instagram"
-                            aria-hidden="true"></a></i></span>
-                <span><a href="https://www.linkedin.com/in/nishant-gada/" target="_blank"><i class="fa fa-linkedin"
-                            aria-hidden="true"></a></i></span>
-                <span><a href="https://github.com/NishantGada/" target="_blank"><i class="fa fa-github"
-                            aria-hidden="true"></a></i></span>
-            </p>
-            <p>Boston</p>
-            <p>MA, USA.</p>
-        </div>
-    </section>
-
-    <div class="back-to-top">
-        <a href="#nav"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+  <section class="contact" id="contact">
+    <div>
+      <h1>Contact</h1>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.js"
-        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script>
-        $(document).ready(function () {
-            $('.menu').click(function () {
-                $('ul').toggleClass('active');
-            })
-        })
-    </script>
+    <div id="reach_me_email">
+      <p><a href="">gada.ni@northeastern.edu</a></p>
+    </div>
 
-    <script>
-        window.addEventListener('scroll', function () {
-            var btt_btn = document.querySelector('.back-to-top');
-            btt_btn.classList.toggle('active', window.scrollY > 300);
-        });
+    <div id="sub-contact">
+      <p>
+        <span><a href="https://www.instagram.com/nishantgada_/" target="_blank"><i class="fa fa-instagram"
+              aria-hidden="true"></a></i></span>
+        <span><a href="https://www.linkedin.com/in/nishant-gada/" target="_blank"><i class="fa fa-linkedin"
+              aria-hidden="true"></a></i></span>
+        <span><a href="https://github.com/NishantGada/" target="_blank"><i class="fa fa-github"
+              aria-hidden="true"></a></i></span>
+      </p>
+      <p>Boston</p>
+      <p>MA, USA.</p>
+    </div>
+  </section>
 
-        if (window.history.replaceState) {
-            window.history.replaceState(null, null, window.location.href);
-        }
-    </script>
+  <div class="back-to-top">
+    <a href="#nav"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+  </div>
 
-    <script>
-        document.querySelectorAll(".accordion-header").forEach((header) => {
-            header.addEventListener("click", function () {
-                const item = this.parentElement;
-                item.classList.toggle("active");
-            });
-        });
-    </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      $('.menu').click(function () {
+        $('ul').toggleClass('active');
+      })
+    })
+  </script>
+
+  <script>
+    window.addEventListener('scroll', function () {
+      var btt_btn = document.querySelector('.back-to-top');
+      btt_btn.classList.toggle('active', window.scrollY > 300);
+    });
+
+    if (window.history.replaceState) {
+      window.history.replaceState(null, null, window.location.href);
+    }
+  </script>
+
+  <script>
+    document.querySelectorAll(".accordion-header").forEach((header) => {
+      header.addEventListener("click", function () {
+        const item = this.parentElement;
+        item.classList.toggle("active");
+      });
+    });
+  </script>
 </body>
 
 </html>

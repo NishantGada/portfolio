@@ -25,13 +25,18 @@
     border: none;
     outline: none;
     text-align: left;
-    padding: 15px 20px;
+    padding: 10px;
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.experience-company-name {
+    color: gray;
+    font-size: 14px;
 }
 
 .accordion-header:focus {
@@ -45,7 +50,7 @@
 .duration {
     font-size: 14px;
     font-style: italic;
-    font-weight: normal;
+    font-weight: bold;
     color: #555;
 }
 
@@ -76,6 +81,10 @@
         font-size: 14px;
     }
 
+    .experience-company-name {
+        font-size: 12px;
+    }
+
     .accordion-body li {
         font-size: 12px;
         text-align: justify;
@@ -83,5 +92,6 @@
 
     .duration {
         text-align: right;
+        font-size: 12px;
     }
 }
