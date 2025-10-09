@@ -1,3 +1,3 @@
 # Portfolio Website
 
-## This is my Portfolio Website built using HTML, CSS, JavaScript, JQuery, and Tailwind CSS.
+## My Portfolio website built using HTML, CSS, and Vanilla JS
